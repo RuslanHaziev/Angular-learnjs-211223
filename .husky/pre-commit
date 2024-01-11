@@ -1,4 +1,8 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-npx lint-staged
+# npx lint-staged
+# undefined
+npm run prettier:fix:all
+npx eslint . --fix
+git add .
